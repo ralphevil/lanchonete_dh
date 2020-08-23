@@ -4,7 +4,7 @@ public class Bolo extends Lanche {
 	private String massa;
 	private String cobertura;
 	private String recheio;
-	private int tempoPadrao = 15;
+	private int tempoPadrao = 10;
 	
 	public String getMassa() {
 		return massa;
@@ -23,8 +23,8 @@ public class Bolo extends Lanche {
 	}
 	public void setRecheio(String recheio) {
 		this.recheio = recheio;
-	}
-	
+	}	
+
 	@Override
 	public int calculaTempo(int distancia) {
 		return super.calculaTempo(distancia) + this.tempoPadrao;
